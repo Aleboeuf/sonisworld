@@ -19,6 +19,9 @@ html, body {
 }
 
 .sw-card-title {
+    position: relative; // Pour éviter d'avoir
+    z-index: 2;         // le bouton flou
+
     color: white;
     font-weight: bold;
     font-size: 1.3em;
@@ -26,10 +29,11 @@ html, body {
     display: flex;
     justify-content: center;
 
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 23px 50px;
 }
 
 .sw-card-content {
+    position: relative;
     padding: 10px 50px 10px 50px;
 
     height: 0px;
@@ -43,11 +47,21 @@ html, body {
 }
 
 .sw-card-collapse-button {
+    position: absolute;
+    top: calc(100% - 13px);
+    z-index: 1000;
     border: 0;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.15em currentColor;
+    
+    &:hover {
+        box-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    }
 }
