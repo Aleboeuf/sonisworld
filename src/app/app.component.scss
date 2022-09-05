@@ -1,0 +1,14 @@
+#app-root {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/images/1011715.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#app-navbar, #app-content {
+    padding: 20px
+}

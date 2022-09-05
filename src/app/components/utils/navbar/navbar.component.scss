@@ -1,0 +1,36 @@
+#navbar {
+    width: 100%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    button {
+        border: 0;
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: 0.2s;
+
+        &:hover {
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+        }
+        
+    }
+
+}
