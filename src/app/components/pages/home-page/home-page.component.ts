@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-page',
@@ -7,13 +7,17 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-  faPlus = faPlus;
+  accordionIcon = faPlus;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  collapseCard(element: HTMLDivElement) {
-    element.classList.toggle('opened');
+  collapseCard(cardBody: HTMLDivElement, cardTitle: HTMLDivElement) {
+    this.accordionIcon = cardBody.classList.contains('opened')
+      ? faPlus
+      : faMinus;
+    cardBody.classList.toggle('opened');
+    cardTitle.classList.toggle('opened');
   }
 }

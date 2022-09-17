@@ -1,0 +1,15 @@
+<app-sw-card title="Lecteur de CSV" defaultOpen="true">
+  <div class="mb-3">
+    <label for="formFile" class="form-label"
+      >Selectionnez un fichier CSV :</label
+    >
+    <input
+      class="form-control sw-input"
+      type="file"
+      accept=".csv"
+      id="formFile"
+      (change)="changeListener($event)"
+    />
+  </div>
+  <div id="table" #tableContainer></div>
+</app-sw-card>

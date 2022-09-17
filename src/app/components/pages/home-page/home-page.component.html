@@ -1,9 +1,3 @@
-<div id="homepage-container">
-  <div class="sw-card-title bg-glass">
-    <div>Sonisworld</div>
-    <button class="sw-card-collapse-button" (click)="collapseCard(mycard)">
-      <fa-icon [icon]="faPlus"></fa-icon>
-    </button>
-  </div>
-  <div #mycard class="sw-card-content bg-glass"></div>
-</div>
+<app-sw-card title="Accueil" defaultOpen="true">
+  <p>Bienvenue sur Sonisworld</p>
+</app-sw-card>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { faHouse, faCode, faFileCsv } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  faHouse = faHouse;
+  faCode = faCode;
+  faFileCsv = faFileCsv;
+
   constructor() {}
 
   ngOnInit(): void {}

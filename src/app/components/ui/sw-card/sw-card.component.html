@@ -1,0 +1,13 @@
+<div id="homepage-container">
+  <div #cardHeader class="sw-card-header bg-glass" (click)="collapseCard()">
+    <div #cardTitle>Sonisworld</div>
+    <button class="sw-card-collapse-button">
+      <fa-icon [icon]="accordionIcon"></fa-icon>
+    </button>
+  </div>
+  <div #cardBody class="sw-card-body bg-glass">
+    <div id="sw_card_content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

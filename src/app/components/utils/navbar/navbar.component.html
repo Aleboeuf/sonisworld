@@ -1,4 +1,17 @@
-<div id="navbar" class="d-flex justify-content-center align-items-center">
-  <button type="button" [routerLink]="'homepage'">Accueil</button>
-  <button type="button" [routerLink]="'testpage'">Page de test</button>
+<div
+  id="navbar"
+  class="d-flex justify-content-center align-items-center bg-glass"
+>
+  <button type="button" [routerLink]="'homepage'">
+    <fa-icon [icon]="faHouse" class="me-2"></fa-icon>
+    Accueil
+  </button>
+  <button type="button" [routerLink]="'testpage'">
+    <fa-icon [icon]="faCode" class="me-2"></fa-icon>
+    Page de test
+  </button>
+  <button type="button" [routerLink]="'csvreaderpage'">
+    <fa-icon [icon]="faFileCsv" class="me-2"></fa-icon>
+    Lecteur de CSV
+  </button>
 </div>
